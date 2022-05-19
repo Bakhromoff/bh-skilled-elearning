@@ -115,10 +115,6 @@ img {
 
 /* HEADER */
 
-.header-hero-wrapper {
-}
-.header {
-}
 
 .header__container {
   display: flex;
@@ -192,10 +188,11 @@ img {
   background-color: #FF6F48;
   padding: 19px 31px 16px;
   border-radius: 31.5px;
-  transition: opacity 0.4s ease;
+  transition: background-image 0.4s ease, opacity 0.4s ease;
 }
 .hero__button:hover {
-  opacity: 0.6;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  background-color: #F02AA6;
 }
 .hero__button:active {
   opacity: 0.5;
@@ -379,7 +376,7 @@ img {
   background-color: #F02AA6;
   border-radius: 28px;
   padding: 14px 31px;
-  transition: opacity 0.4s ease;
+  transition: background-image 0.4s ease, opacity 0.4s ease;
 }
 .footer__button:hover {
   background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
@@ -387,4 +384,19 @@ img {
 }
 .footer__button:active {
   opacity: 0.4;
+}
+
+/* MEDIA */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  body {
+    background-image: url(../img/hero-bg@2x.png);
+  }
 }
