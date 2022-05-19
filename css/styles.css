@@ -68,6 +68,10 @@ body {
   line-height: 1.56;
   background-color: #fff;
   color: var(--text-color);
+  background-image: url(../img/hero-bg.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 810px -146px;
 }
 .visually-hidden {
   position: absolute;
@@ -154,6 +158,98 @@ img {
 }
 .header__button:active {
   opacity: 0.6;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+}
+
+.hero__container {
+  padding-top: 148px;
+  padding-bottom: 226px;
+}
+.hero__content {
+  width: 457px;
+}
+.hero__heading {
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 71px;
+  color: var(--dark-color);
+  margin-top: 0;
+  margin-bottom: 29px;
+}
+.hero__text {
+  width: 445px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.hero__button {
+  background-image: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  background-color: #FF6F48;
+  padding: 19px 31px 16px;
+  border-radius: 31.5px;
+}
+.course-info {
+  width: 199px;
+  border-radius: 15px;
+  box-shadow: 0px 34px 54px rgba(6, 22, 141, 0.158854);
+  background-color: #fff;
+  position: absolute;
+  right: 427px;
+  bottom: 207px;
+}
+.course-info__content{
+  padding: 20px 70px 20px 24px;
+}
+.course-info__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 2px;
+  color: var(--text-color);
+  display: inline-block;
+}
+.course-info__text {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  color: var(--dark-color);
+  margin: 0;
+  display: inline-block;
+}
+.course-members-info {
+  width: 155px;
+  border-radius: 15px;
+  box-shadow: 0px 34px 54px rgba(6, 22, 141, 0.158854);
+  background-color: #fff;
+  position: absolute;
+  right: 70px;
+  bottom: 447px;
+}
+.couse-members-info__content {
+  padding: 20px 57px 20px 24px;
+}
+.course-members-info__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 2px;
+  color: var(--text-color);
+  display: inline-block;
+}
+.course-members-info__text {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  color: var(--dark-color);
+  display: inline-block;
+  margin: 0;
 }
 /* MAIN CONTENT */
 
