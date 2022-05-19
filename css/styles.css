@@ -192,6 +192,13 @@ img {
   background-color: #FF6F48;
   padding: 19px 31px 16px;
   border-radius: 31.5px;
+  transition: opacity 0.4s ease;
+}
+.hero__button:hover {
+  opacity: 0.6;
+}
+.hero__button:active {
+  opacity: 0.5;
 }
 .course-info {
   width: 199px;
@@ -255,4 +262,96 @@ img {
 
 .main {
   flex-grow: 1;
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+  background-color: #F0F1FF;
+}
+
+ /* COURSE */
+
+ .courses {
+  padding-bottom: 60px;
+  padding-top: 24px;
+}
+.courses__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.courses__item {
+  width: 350px;
+  height: 322px;
+  border-radius: 15px;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 80px;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+}
+.courses__item:not(:last-child) {
+  margin-right: 30px;
+}
+.courses__item:nth-child(3n) {
+  margin-right: 0;
+}
+.courses__item--first {
+  background-image: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  background-color: #F02AA6;
+}
+.courses__title {
+  display: inline-block;
+  width: 286px;
+  margin: 0;
+  padding: 64px 32px 138px;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  color: #fff;
+}
+.courses__icon {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  top: 0;
+  left: 32px;
+  transform: translateY(-50%);
+}
+.courses-item {
+  padding: 64px 32px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.courses-item__title {
+  display: inline-block;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--dark-color);
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.courses-item__text {
+  display: inline-block;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+.courses-item__text--photography {
+  margin-bottom: 52px;
+}
+.courses-item__text--design {
+  margin-bottom: 52px;
+}
+
+.courses-item__button {
+  color: #F74780;
+  transition: color 0.4s ease;
+}
+.courses-item__button:hover {
+  color: #FFA7C3;
 }
